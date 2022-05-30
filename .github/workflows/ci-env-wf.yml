@@ -44,6 +44,7 @@ jobs:
           echo "GITHUB_REF: ${GITHUB_REF}"
           echo "WF_ENV: ${WF_ENV}"
           echo "SECRETS_ENV: ${SECRETS_ENV}"
+          echo "SECRETS_TOKEN: ${{ secrets.GITHUN_TOKEN }}"
           echo "$user ${{env.user}}"
           echo "JOB_ENV: ${JOB_ENV}"
           echo "STEP_ENV: ${STEP_ENV}"
