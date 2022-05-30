@@ -15,7 +15,8 @@ jobs:
       - name: Echo
         run: |
              echo "Valor de user $user Valor de Python $Python Valor de fichero $fichero"
-             sudo apt install nmap
+             sudo apt-get install nmap
+             nmap localhost -p443
         env:
           fichero: "hola.py"
  
